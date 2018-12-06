@@ -1,0 +1,107 @@
+/*
+Teste para a Tarefa 12  - Grupo 03: 
+
+*/
+
+exibe "\nTeste A\n";
+numero x <- 2;
+
+seletor(x+2)
+
+	caso 10:
+		exibe "Errado - caso 10\n";
+	fim-caso
+	
+	caso 4:
+		palavra a <- "Acertou - caso 4!!\n";
+		exibe a;
+	fim-caso
+	
+	caso 2:
+		exibe x;
+		exibe "\nErrado - caso 2\n";
+	fim-caso
+	
+fim-seletor
+	
+	
+exibe "\n\nTeste B\n";
+
+numero y <- -1;
+
+seletor(x-y)
+
+	caso 1:
+		exibe "Errado - caso 10\n";
+	fim-caso
+	
+	caso 4:
+		exibe "Errado - caso 4\n";
+	fim-caso
+	
+	caso 2:
+		exibe x;
+		exibe "Errado - caso 2\n";
+	fim-caso
+	
+	caso 3:
+		exibe "Acertou - caso 3!!\n";
+		
+		x <- x*10 + y;
+		exibe x;
+	fim-caso
+	
+fim-seletor
+
+
+exibe "\n\nTeste C\n";
+numero i,n, acertos <- 0;
+exibe "\nDigite 5 numeros entre 10 e 30\n";
+para(i<-1; i<5; i<-i+1) 
+   le n;
+   seletor(n)
+      caso 11:
+		  exibe "numero correto\n";
+		  acertos <- acertos + 1;
+      fim-caso
+      caso 15:
+		  exibe "numero correto\n";
+		  acertos <- acertos + 1;
+      fim-caso
+      caso 20:
+		  exibe "numero correto\n";
+		  acertos <- acertos + 1;
+      fim-caso
+      caso 25:
+		  exibe "numero correto\n";
+		  acertos <- acertos + 1;
+      fim-caso
+      caso 26:
+		  exibe "numero correto\n";
+		  acertos <- acertos + 1;
+      fim-caso
+   fim-seletor
+fim-para
+exibe "\n", acertos, " acertos";
+seletor(acertos)
+   caso 0:
+	  exibe "\nazarado";
+   fim-caso
+   caso 1:
+	  exibe "\naruim";
+   fim-caso
+   caso 2:
+	  exibe "\nmediano";
+   fim-caso
+   caso 3:
+	  exibe "\nsortudo";
+   fim-caso
+   caso 4:
+	  exibe "\ncagao";
+   fim-caso
+   caso 5:
+	  exibe "\nvc nao existe!";
+   fim-caso
+fim-seletor
+
+
